@@ -1,4 +1,4 @@
-package ar.edu.unju.fi.ejercicio3.model;
+package ar.edu.unju.fi.ejercicio3;
 
 public class Numero {
 	private int numero;

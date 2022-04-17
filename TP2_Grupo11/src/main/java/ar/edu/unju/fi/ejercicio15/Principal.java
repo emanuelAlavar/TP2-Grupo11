@@ -3,8 +3,6 @@ package ar.edu.unju.fi.ejercicio15;
 import java.util.Calendar;
 import java.util.Scanner;
 
-import ar.edu.unju.fi.ejercicio15.model.Persona;
-
 public class Principal {
 
 	public static void main(String[] args) {

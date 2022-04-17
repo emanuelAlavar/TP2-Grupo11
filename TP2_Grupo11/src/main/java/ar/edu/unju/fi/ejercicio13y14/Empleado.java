@@ -1,4 +1,4 @@
-package ar.edu.unju.fi.ejercicio13;
+package ar.edu.unju.fi.ejercicio13y14;
 
 public class Empleado {
 	private String nombre;

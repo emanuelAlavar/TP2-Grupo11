@@ -2,8 +2,6 @@ package ar.edu.unju.fi.ejercicio4;
 
 import java.util.Scanner;
 
-import ar.edu.unju.fi.ejercicio4.model.Mes;
-
 public class Principal {
 
 	public static void main(String[] args) {

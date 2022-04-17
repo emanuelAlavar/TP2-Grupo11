@@ -1,7 +1,6 @@
 package ar.edu.unju.fi.ejercicio3;
 
 import java.util.Scanner;
-import ar.edu.unju.fi.ejercicio3.model.Numero;
 
 public class Principal {
 
