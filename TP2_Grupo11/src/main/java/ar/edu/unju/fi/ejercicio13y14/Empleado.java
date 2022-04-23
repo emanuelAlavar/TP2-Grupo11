@@ -32,11 +32,13 @@ public class Empleado {
 		this.nombre = nombre;
 		this.fechaIngreso = fechaIngreso;		
 		this.horasTrabajadas = horasTrabajadas;
+		this.legajo=-9999;
 	}
 	
 	public Empleado(String nombre, int horasTrabajadas) {
 		this.nombre = nombre;
 		this.horasTrabajadas = horasTrabajadas;
+		this.legajo=-9999;
 	}
 
 	public String getNombre() {

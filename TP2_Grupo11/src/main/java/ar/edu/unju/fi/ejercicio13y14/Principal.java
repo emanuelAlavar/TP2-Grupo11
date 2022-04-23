@@ -14,6 +14,8 @@ public class Principal {
 		empleado.setSueldo(empleado.calcularSueldo(horasT));
 		System.out.println(empleado.toString());
 		
+		
+		//Ejercicio 14
 		Empleado empleadoUno = new Empleado();
 		Empleado empleadoDos = new Empleado("Emanuel Alavar",3333,150);
 		Empleado empleadoTres = new Empleado("Hector Cruz","2022-07-12",190);
