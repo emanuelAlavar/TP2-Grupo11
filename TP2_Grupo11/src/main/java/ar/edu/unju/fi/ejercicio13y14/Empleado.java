@@ -1,8 +1,10 @@
 package ar.edu.unju.fi.ejercicio13y14;
 
+import java.util.Calendar;
+
 public class Empleado {
 	private String nombre;
-	private String fechaIngreso;
+	private Calendar fechaIngreso;
 	private int legajo;
 	private String email;
 	private float sueldo;
@@ -12,7 +14,7 @@ public class Empleado {
 		
 	}
 	
-	public Empleado(String nombre, String fechaIngreso, int legajo, String email, int horasTrabajadas) {
+	public Empleado(String nombre, Calendar fechaIngreso, int legajo, String email, int horasTrabajadas) {
 		this.nombre = nombre;
 		this.fechaIngreso = fechaIngreso;
 		this.legajo = legajo;
@@ -20,15 +22,13 @@ public class Empleado {
 		this.horasTrabajadas = horasTrabajadas;
 	}
 
-
-
 	public Empleado(String nombre, int legajo, int horasTrabajadas) {
 		this.nombre = nombre;		
 		this.legajo = legajo;		
 		this.horasTrabajadas = horasTrabajadas;
 	}
 	
-	public Empleado(String nombre, String fechaIngreso, int horasTrabajadas) {
+	public Empleado(String nombre, Calendar fechaIngreso, int horasTrabajadas) {
 		this.nombre = nombre;
 		this.fechaIngreso = fechaIngreso;		
 		this.horasTrabajadas = horasTrabajadas;
@@ -49,11 +49,11 @@ public class Empleado {
 		this.nombre = nombre;
 	}
 
-	public String getFechaIngreso() {
+	public Calendar getFechaIngreso() {
 		return fechaIngreso;
 	}
 
-	public void setFechaIngreso(String fechaIngreso) {
+	public void setFechaIngreso(Calendar fechaIngreso) {
 		this.fechaIngreso = fechaIngreso;
 	}
 
@@ -88,20 +88,21 @@ public class Empleado {
 	public void setHorasTrabajadas(int horasTrabajadas) {
 		this.horasTrabajadas = horasTrabajadas;
 	}
-	
-	
-	
-	@Override
-	public String toString() {
-		return "Empleado [nombre=" + nombre + ", fechaIngreso=" + fechaIngreso + ", legajo=" + legajo + ", email="
-				+ email + ", sueldo=" + sueldo + ", horasTrabajadas=" + horasTrabajadas + "]";
-	}
 
-	public float calcularSueldo(int horasTrabajadas) {
-		if(horasTrabajadas>=161) 
-			return horasTrabajadas*650;
+	public float calcularSueldo() {
+		int horasT=this.horasTrabajadas;
+		if(horasT>=161) 
+			return horasT*650;
 		else {
-			return horasTrabajadas*600;		
+			return horasT*600;		
 		}
 	}
+
+	@Override
+	public String toString() {
+		return "Empleado nombre=" + nombre + ", legajo=" + legajo + ", email="
+				+ email + ", sueldo=" + sueldo + ", horasTrabajadas=" + horasTrabajadas;
+	}
+	
+	
 }
